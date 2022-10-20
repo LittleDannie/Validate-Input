@@ -1,0 +1,66 @@
+body {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Times New Roman';
+}
+
+form {
+	margin: 20px auto;
+	width: 700px;
+	padding: 12px;
+}
+
+fieldset {
+	padding: 30px 30px 30px 6px;
+	border-radius: 4px;
+	font-size: 18px;
+}
+
+label {
+	font-size: 16px;
+	font-weight: bold;
+	font-style: italic;
+	color: darkblue;
+}
+
+input {
+	width: 100%;
+	padding: 12px 4px;
+	border: 2px solid grey;
+	border-radius: 6px;
+	font-size: 16px;
+	font-weight: 400px;
+	margin: 8px;
+}
+
+input + p {
+	font-size: 14px;
+	text-align: left;
+	height: 0;
+	margin: 0;
+	font-style: italic;
+	opacity: 0;
+}
+
+input.valid {
+	border-color: #36cc36;
+}
+
+input.valid:focus {
+	outline: 2px solid #36cc36;
+}
+
+input.notvalid {
+	border-color: red;
+}
+
+input.notvalid:focus {
+	outline: 2px solid red;
+}
+
+input.notvalid + p {
+	opacity: 1;
+	height: auto;
+	margin: 0 0 8px 8px;
+	color: red;
+}

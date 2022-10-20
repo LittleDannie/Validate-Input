@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="validation.css">
+	</head>
+<body>
+	<!-- Personal Details Form -->
+	<form>
+		<fieldset>                                                                                              	
+	    	<legend>Personal Information</legend>
+                                                                                                                 
+	    	<label>Username:</label>                                                 	
+	        <input type="text" name="username" placeholder="e.g Error-Code" />
+	        <p>Username should contain letters or(and) numbers and -,_, between 3 and 12 characters</p>
+                                                                                                                 
+	    	<label>Full Name:</label>                                                                        	
+	        <input type="text" name="fullname" placeholder="John Doe"/>
+	        <p>Full Name must be in letters only, be separated by a space, not less than 2 characters and not more than 40 characters 20 each</p>
+
+			<label>Password:</label>                                                                     		
+	        <input type="password" name="password" placeholder="*********" />
+	        <p>Password should contain letters, numbers, _@-$%& only and be between 8 to 12 characters</p>
+
+			<label>Tel:</label>                                                  		
+	        <input type="text" name="telephone" placeholder="e.g 0**12345678" />
+			<p>Telephone should start with 070,080,090,091 and 11 digits</p>		
+
+			<label>NIN:</label>                                       		
+	        <input type="text" name="nin" placeholder="12345678901" />
+			<p>NIN should be 11 digits only</p>		
+		</fieldset>
+	</body>
+<script src="validation.js"></script>
+</html>
